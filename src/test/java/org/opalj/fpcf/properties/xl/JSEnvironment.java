@@ -17,7 +17,6 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
 @Retention(CLASS)
 @Target({METHOD, CONSTRUCTOR})
 @Documented
-@PropertyValidator(key = "TAJSEnvironment", validator = TAJSEnvironmentMatcher.class)
 public @interface JSEnvironment {
 
     JSEnvironmentBinding[] bindings();
